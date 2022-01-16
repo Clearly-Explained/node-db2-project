@@ -44,7 +44,7 @@ The critical information for each car is the vin, make, model, and mileage. They
 
   - `checkCarPayload` returns a status 400 with a `{ message: "<field name> is missing" }` if any required field is missing.
 
-  - `checkVinNumberValid` returns a status 400 with a `{ message: "vin <vin number> is invalid" }` if the vin number is [invalid](https://www.npmjs.com/package/vin-validator).
+  - `checkVinNumberValid` returns a status 400 with a `{ message: "vin <vin number> is invalid" }` if the vin number is [invalid](https://www.npmjs.com/package/vin-validator). use https://www.cjponyparts.com/resources/check-digit-calculator to get valid vin numbers. EX: 10000000800000000, 11111111111111111, 10000007100000000, 10000003500000000
 
   - `checkVinNumberUnique` returns a status 400 with a `{ message: "vin <vin number> already exists" }` if the vin number already exists in the database.
 
